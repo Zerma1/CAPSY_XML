@@ -11,16 +11,16 @@ Un document XML est composé d’éléments qui forment une structure arborescen
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <livres>
-    <livre>
-        <titre>Les Misérables</titre>
-        <auteur>Victor Hugo</auteur>
-        <annee>1862</annee>
-    </livre>
-    <livre>
-        <titre>1984</titre>
-        <auteur>George Orwell</auteur>
-        <annee>1949</annee>
-    </livre>
+	<livre>
+		<titre>Les Misérables</titre>
+		<auteur>Victor Hugo</auteur>
+		<annee>1862</annee>
+	</livre>
+	<livre>
+		<titre>1984</titre>
+		<auteur>George Orwell</auteur>
+		<annee>1949</annee>
+	</livre>
 </livres>
 ```
 
@@ -46,8 +46,8 @@ XML suit des règles strictes :
 3. **Un seul élément racine** :
    ```xml
    <personnes>
-       <personne>Jean</personne>
-       <personne>Marie</personne>
+	   <personne>Jean</personne>
+	   <personne>Marie</personne>
    </personnes>
    ```
 4. **Les attributs doivent être entre guillemets** :
@@ -63,8 +63,8 @@ Deux façons de stocker des informations :
 - **Avec des éléments** :
   ```xml
   <livre>
-      <titre>1984</titre>
-      <auteur>George Orwell</auteur>
+	  <titre>1984</titre>
+	  <auteur>George Orwell</auteur>
   </livre>
   ```
 - **Avec des attributs** :
@@ -81,11 +81,11 @@ Deux façons de stocker des informations :
 Exemple d’une DTD :
 ```dtd
 <!DOCTYPE livres [
-    <!ELEMENT livres (livre+)>
-    <!ELEMENT livre (titre, auteur, annee)>
-    <!ELEMENT titre (#PCDATA)>
-    <!ELEMENT auteur (#PCDATA)>
-    <!ELEMENT annee (#PCDATA)>
+	<!ELEMENT livres (livre+)>
+	<!ELEMENT livre (titre, auteur, annee)>
+	<!ELEMENT titre (#PCDATA)>
+	<!ELEMENT auteur (#PCDATA)>
+	<!ELEMENT annee (#PCDATA)>
 ]>
 ```
 
@@ -93,21 +93,21 @@ Exemple d’une DTD :
 Exemple de schéma XSD :
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="livres">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="livre" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="titre" type="xs:string"/>
-                            <xs:element name="auteur" type="xs:string"/>
-                            <xs:element name="annee" type="xs:integer"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+	<xs:element name="livres">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="livre" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="titre" type="xs:string"/>
+							<xs:element name="auteur" type="xs:string"/>
+							<xs:element name="annee" type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>
 ```
 
@@ -122,9 +122,9 @@ tree = ET.parse('livres.xml')
 root = tree.getroot()
 
 for livre in root.findall('livre'):
-    titre = livre.find('titre').text
-    auteur = livre.find('auteur').text
-    print(f"Titre : {titre}, Auteur : {auteur}")
+	titre = livre.find('titre').text
+	auteur = livre.find('auteur').text
+	print(f"Titre : {titre}, Auteur : {auteur}")
 ```
 
 ### 5.2. En Java avec DOM Parser
@@ -133,18 +133,18 @@ import javax.xml.parsers.*;
 import org.w3c.dom.*;
 
 public class XMLReader {
-    public static void main(String[] args) throws Exception {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-        Document doc = builder.parse("livres.xml");
+	public static void main(String[] args) throws Exception {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		Document doc = builder.parse("livres.xml");
 
-        NodeList livres = doc.getElementsByTagName("livre");
-        for (int i = 0; i < livres.getLength(); i++) {
-            Element livre = (Element) livres.item(i);
-            String titre = livre.getElementsByTagName("titre").item(0).getTextContent();
-            System.out.println("Titre : " + titre);
-        }
-    }
+		NodeList livres = doc.getElementsByTagName("livre");
+		for (int i = 0; i < livres.getLength(); i++) {
+			Element livre = (Element) livres.item(i);
+			String titre = livre.getElementsByTagName("titre").item(0).getTextContent();
+			System.out.println("Titre : " + titre);
+		}
+	}
 }
 ```
 
@@ -155,8 +155,8 @@ public class XMLReader {
 |---------------------|---------|----------|
 | Lisibilité humaine  | Moyenne | Excellente |
 | Poids des données   | Plus lourd | Plus léger |
-| Validation         | DTD/XSD | Aucun schéma imposé |
-| Compatibilité     | Standard ancien | Préféré pour le web |
+| Validation		 | DTD/XSD | Aucun schéma imposé |
+| Compatibilité	 | Standard ancien | Préféré pour le web |
 
 ---
 

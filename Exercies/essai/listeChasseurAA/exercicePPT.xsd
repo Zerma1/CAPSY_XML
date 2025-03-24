@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="Flotte">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Avion" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nom">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="version" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute name="constructeur" type="xs:string" use="required"/>
+									<xs:attribute name="model" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="pays">
+								<xs:complexType>
+									<xs:attribute name="nom" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="role">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="classe" type="xs:string"/>
+										<xs:element name="mission" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="quantite">
+								<xs:complexType>
+									<xs:attribute name="qte" type="xs:positiveInteger" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="photo">
+								<xs:complexType>
+									<xs:attribute name="link" type="xs:string" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="stationnement">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="escadron" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="role" type="xs:string" use="optional"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="base" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

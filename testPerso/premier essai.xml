@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="premier%20essai.xsd"?>
+<Film titre="monaco">
+	<personnage metier="notaire">
+		<nom>Tic</nom>
+		<prenom>Tac</prenom>
+		<acteur>jean-paule</acteur>
+	</personnage>
+</Film>

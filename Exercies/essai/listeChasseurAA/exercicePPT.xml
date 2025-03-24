@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="exercicePPT.xsd" ?>
+
+<Flotte>
+	<Avion>
+		<nom constructeur="Dassault" model="Rafale">
+			<version>C &amp; B</version>
+		</nom>
+		<pays nom="France"/>
+		<role>
+			<classe>Avion de combat</classe>
+			<mission>Multirôle</mission>
+		</role>
+		<quantite qte="102"/>
+		<photo link="rafale.jpg"/>
+		<stationnement base="Saint Dizier-Robinson">
+			<escadron role="dissuasion">EC 1/4 Gasconge</escadron>
+			<escadron>EC 2/4 Lafayette</escadron>
+			<escadron>EC 3/4 aquitaine</escadron>
+			<escadron>ECE 1/30 côte-d'argent</escadron>
+			<escadron>EC 2/30 Nomandie-Niémen</escadron>
+			<escadron>EC3/30 Lorraine</escadron>
+			<escadron>EC 1/7 Provence</escadron>
+		</stationnement>
+	</Avion>
+	
+	<Avion>
+		<nom constructeur="Dassault" model="Mirage">
+			<version>2000 D</version>
+		</nom>
+		<pays nom="France"/>
+		<role>
+			<classe>Chasseur-bombardier</classe>
+			<mission>Assaut conventionnel</mission>
+		</role>
+		<quantite qte="71"/>
+		<photo link="mirage.jpg"/>
+		<stationnement base="Nancy-Ochey">
+			<escadron role="attaque">EC 3/3 Ardennes</escadron>
+			<escadron>ETD 4/3 Argonne</escadron>
+		</stationnement>
+	</Avion>
+
+	<Avion>
+		<nom constructeur="Dassault" model="Mirage">
+			<version>2000 D</version>
+		</nom>
+		<pays nom="France"/>
+		<role>
+			<classe>Chasseur-bombardier</classe>
+			<mission>Assaut conventionnel</mission>
+		</role>
+		<quantite qte="71"/>
+		<photo link="mirage.jpg"/>
+		<stationnement base="Nancy-Ochey">
+			<escadron role="attaque">EC 3/3 Ardennes</escadron>
+			<escadron>ETD 4/3 Argonne</escadron>
+		</stationnement>
+	</Avion>
+
+		<Avion>
+		<nom constructeur="Dassault" model="Mirage">
+			<version>2000 D</version>
+		</nom>
+		<pays nom="France"/>
+		<role>
+			<classe>Chasseur-bombardier</classe>
+			<mission>Assaut conventionnel</mission>
+		</role>
+		<quantite qte="71"/>
+		<photo link="mirage.jpg"/>
+		<stationnement base="Nancy-Ochey">
+			<escadron role="attaque">EC 3/3 Ardennes</escadron>
+			<escadron>ETD 4/3 Argonne</escadron>
+		</stationnement>
+	</Avion>
+	
+</Flotte>
