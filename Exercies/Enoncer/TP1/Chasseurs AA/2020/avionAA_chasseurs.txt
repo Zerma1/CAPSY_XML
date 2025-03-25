@@ -1,0 +1,4 @@
+Dassault;Rafale C&B;FR;avion de combat multirôle;102;img1.jpg;EC 1/4 Gascogne,EC 2/4 Lafayette,EC 3/4 aquitaine, ECE 1/30 côte-d'argent,EC 2/30 Nomandie-Niémen, EC3/30 Lorraine, EC 1/7 Provence 
+Dassault;Mirage 2000 D;FR;Chasseur-bombardier (assaut conventionnel);71;img2.jpg; EC 1/3 Navarre, EC 2/3 champagne, EC 3/3 Ardennes, ETD 4/3 argonne, ECE 1/30 côte-d'argent
+Dassault;Mirage 2000-5F &C;FR;Avion de chasse (défense aérienne);40;img3.jpg; Ec 1/2 Cigognes, EC 2/5 Ile de France, EC 3/11 Corse
+Dassault;Mirage 2000 B;FR;Avion de chasse (transformation);7;img4.jpg; EC 2/5 Ile de France

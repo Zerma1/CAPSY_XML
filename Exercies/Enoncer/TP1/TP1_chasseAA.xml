@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- PROLOGUE = 1ere partie du fichier xml-->
+
+<!-- à partir de cette balise  
+commence "l'élément document" aussi appelé "l'élément racine"
+nommé communément RACINE -->
+<lachasse>
+	<chasseur constructeur="Dassault" modele="RAFALE">
+		<version>C et B</version>
+		<pays>FR</pays>
+		<role>avion de combat multirôle</role>
+		<quantite>102</quantite>
+		<photo>img1.jpg</photo>
+		<stationnement >
+			<unite ba="ST DIZIER">EC 1/4 Gascogne</unite>
+			<unite ba="ST DIZIER">EC 2/4 Lafayette</unite>
+			<unite ba="ST DIZIER">EC 3/4 Aquitaine</unite>
+			<unite ba="MT Marsan">EC 1/30 Côte-d'Argent</unite>
+			<unite ba="MT Marsan">RC 2/30 Normandie-Niémen</unite>
+			<unite ba="MT Marsan">EC 3/30 Lorraine</unite>
+			<unite ba="Al Dhafra">EC 1/7 Provence</unite> 
+		</stationnement>
+	</chasseur>
+	<chasseur constructeur="Dassault" modele="MIRAGE 2000">
+		<version>D</version>
+		<pays>FR</pays>
+		<role>Chasseur-bombardier (assaut conventionnel)</role>
+		<quantite>71</quantite>
+		<photo>img2.jpg</photo>
+		<stationnement>
+			<unite ba="Nancy">EC 1/3 Navarre</unite>
+			<unite ba="Nancy">EC 2/3 Champagne</unite>
+			<unite ba="Nancy">EC 3/3 Ardennes</unite>
+			<unite ba="Nancy">ETD 4/3 Argonne</unite>
+			<unite ba="MT Marsan">ECE 1/30 Côte-d'Argent</unite> 
+		</stationnement>
+	</chasseur>
+	<chasseur constructeur="Dassault" modele="MIRAGE 2000">
+		<version>5F et C</version>
+		<pays>FR</pays>
+		<role>Avion de chasse (défense aérienne)</role>
+		<quantite>40</quantite>
+		<photo>img3.jpg</photo>
+		<stationnement>
+			<unite ba="Luxeuil"> 1/2 Cigognes</unite>
+			<unite ba="Orange"> 2/5 Ile de France</unite>
+			<unite ba="Djibouti"> 3/11 Corse</unite>
+		</stationnement>
+	</chasseur>
+	<chasseur constructeur="Dassault" modele="MIRAGE 2000">
+		<version>B</version>
+		<pays>FR</pays>
+		<role>Avion de chasse (transformation)</role>
+		<quantite>7</quantite>
+		<photo>img4.jpg</photo>
+		<stationnement>
+				<unite ba="Orange">EC 2/5 Ile de France</unite>
+		</stationnement>
+	</chasseur>
+</lachasse>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
