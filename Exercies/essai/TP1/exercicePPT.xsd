@@ -18,7 +18,7 @@
 							</xs:element>
 							<xs:element name="pays">
 								<xs:complexType>
-									<xs:attribute name="nom" type="xs:string" use="required"/>
+									<xs:attribute name="nom" type="xs:string" default="France" use="optional" />
 								</xs:complexType>
 							</xs:element>
 							<xs:element name="role">
@@ -42,7 +42,7 @@
 							<xs:element name="stationnement">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="escadron" maxOccurs="unbounded">
+										<xs:element name="escadron" minOccurs="1" maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:simpleContent>
 													<xs:extension base="xs:string">
