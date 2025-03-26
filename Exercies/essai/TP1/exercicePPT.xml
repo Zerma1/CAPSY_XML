@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="exercicePPT.xsd" ?>
 
+<!DOCTYPE lachasse[
+	
+]>
+
 <Flotte>
 	<Avion>
 		<nom constructeur="Dassault" model="Rafale">
@@ -74,5 +78,5 @@
 			<escadron>ETD 4/3 Argonne</escadron>
 		</stationnement>
 	</Avion>
-	
+
 </Flotte>
